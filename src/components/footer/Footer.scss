@@ -1,0 +1,51 @@
+// src/components/footer/Footer.scss
+
+.footer {
+  position: relative; /* Changed from fixed/absolute to relative */
+  margin: 10px auto; /* Center the navbar */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  backdrop-filter: blur(10px); /* Nice glassy effect */
+  // border-top: 1px solid #00ffc6;
+  z-index: 1;
+}
+
+.footer-content {
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin: 10px;
+
+  a {
+    color: white;
+    font-size: 2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #00ffc6;
+      transform: scale(1.2);
+    }
+  }
+}
+
+p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    flex-direction: row;
+  }
+}

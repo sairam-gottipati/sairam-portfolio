@@ -1,0 +1,151 @@
+.journey-section {
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+  width: 80%;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: #00ffc6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+
+  .dot {
+    width: 16px;
+    height: 16px;
+    background: #00ffc6;
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: -8px;
+    z-index: 1;
+  }
+
+  &.right .dot {
+    left: -8px;
+    right: auto;
+  }
+
+  .content {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 255, 198, 0.1);
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #333;
+
+    &:hover {
+      border-color: #00ffc6;
+      transform: translateY(-5px);
+    }
+    &.active {
+      width: 100%;
+      background-color: #222;
+      border-color: #00ffc6;
+    }
+
+    .date {
+      color: #edf5f3;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .card {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      align-items: center;
+
+      img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        border-radius: 4px;
+        background: #fff;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .company {
+        margin-top: 4px;
+        font-size: 1.2rem;
+        color: #00ffc6;
+      }
+    }
+  }
+}
+.description {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+  color: #ccc;
+}
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+
+  .content {
+    margin-right: auto;
+  }
+}
+
+.timeline-item.right {
+  left: 50%;
+
+  .content {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 0;
+
+    &.right {
+      left: 0;
+      right: 0;
+    }
+
+    .dot {
+      left: 0;
+    }
+
+    .content {
+      margin: 0;
+    }
+  }
+}

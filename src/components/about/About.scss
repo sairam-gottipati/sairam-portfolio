@@ -1,0 +1,191 @@
+.about-wrapper {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 90%;
+  height: 100%;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 50%;
+}
+
+.typewriter-text {
+  font-size: 1.1rem;
+  height: 2.3rem;
+  color: #00ffc6;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-family: "Courier New", monospace;
+}
+
+.button-group {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  gap: 3rem;
+}
+
+.linkedin-button,
+.resume-button {
+  background-color: #0077b5;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button {
+  background-color: #dc3545;
+}
+
+.linkedin-button:hover,
+.resume-button:hover {
+  opacity: 0.85;
+}
+
+.tech-bubble-game {
+  padding: 20px;
+  border: 1px solid #00ffaa55;
+  flex: 1;
+  min-width: 300px;
+  height: 420px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  text-align: center;
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .bubble-area {
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    left: 1.5rem;
+  }
+
+  .bubble {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    animation: float 12s infinite linear;
+  }
+
+  .popping {
+    animation: pop 0.3s forwards !important;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  .game-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 20px auto;
+  }
+  .game-button {
+    background: linear-gradient(to right, #00ffaa, #007f73);
+    border: none;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 200px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .game-button:hover {
+    transform: scale(1.05);
+  }
+
+  .score-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00ffaa;
+    text-align: center;
+    animation: popScore 0.6s ease-in-out;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.animate-score {
+  animation: popScore 0.8s ease-in-out;
+  font-size: 1.2rem;
+  color: #4df3d6;
+}
+
+@keyframes popScore {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

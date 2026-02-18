@@ -1,0 +1,44 @@
+:root {
+  --app-bg: #03002e;
+  --app-bg-nav: rgba(3, 0, 46, 0.95);
+  --app-bg-nav-mobile: rgba(3, 0, 46, 0.98);
+}
+
+body {
+  background-color: var(--app-bg);
+  color: white;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* About.scss, Experience.scss, Projects.scss, Clients.scss */
+
+section {
+  position: relative; /* Changed from fixed/absolute to relative */
+  margin: 10px auto; /* Center the navbar */
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  flex-direction: column; /* Stack items vertically */
+  align-content: center;
+  padding: 15px 25px;
+  // background: rgba(20, 20, 20, 0.9);
+  backdrop-filter: blur(10px); /* Nice glassy effect */
+  // border-radius: 16px;
+  // border: 1px solid white;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+p {
+  color: white;
+}
+/* global.scss - ADD this at bottom */
