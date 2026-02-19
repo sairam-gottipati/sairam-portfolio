@@ -56,7 +56,7 @@ const timeline = [
     date: "Aug 2024 – Present",
     title: "Full-Stack Software Engineer",
     company: "Orion Path Technologies",
-    logo: `public/op.png`,
+    logo: `${baseUrl}op.png`,
     description:
       "Working on a multi-tenant SaaS platform with end-to-end ownership across frontend and backend. Building React-based user interfaces, designing scalable APIs with Node.js, and improving system performance, security, and observability on AWS.",
   },
@@ -64,7 +64,7 @@ const timeline = [
     date: "2023 – 2024",
     title: "Master of Science in Computer Science",
     company: "Sacred Heart University",
-    logo: `public/shu.jpeg`,
+    logo: `${baseUrl}shu.jpeg`,
     description:
       "Completed a Master’s degree in Computer Science with a focus on software engineering and distributed systems. Built full-stack projects using React and backend services with Python and Node.js.",
   },
@@ -72,7 +72,7 @@ const timeline = [
     date: "Feb 2019 – Aug 2023",
     title: "Software Engineer (Full Stack)",
     company: "Mindtree Ltd",
-    logo: `public/md.png`,
+    logo: `${baseUrl}md.png`,
     description:
       "Developed and maintained large-scale enterprise applications using React, Python, and Node.js. Built real-time features with FastAPI and Redis, optimized PostgreSQL performance, and supported zero-downtime database migrations in production systems.",
   },
@@ -80,7 +80,7 @@ const timeline = [
     date: "2014 – 2018",
     title: "Bachelor of Science in Computer Science",
     company: "KL University",
-    logo: `public/klu.png`,
+    logo: `${baseUrl}klu.png`,
     description:
       "Graduated with a strong foundation in computer science fundamentals, including data structures, object-oriented programming, and web development. Gained early exposure to full-stack application development.",
   },

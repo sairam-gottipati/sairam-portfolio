@@ -151,7 +151,7 @@ I’m especially comfortable working with modern frontend frameworks like{" "}
             </a>
 
             <a
-              href={`public/SAI RAM GOTTIPATI-fsd 01 (1).pdf`}
+              href={encodeURI(`${baseUrl}SAI RAM GOTTIPATI-fsd 01 (1).pdf`)}
               className="resume-button"
               target="_blank"
               rel="noopener noreferrer"
